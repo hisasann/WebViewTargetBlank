@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title></title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#lf').on('click', function(e) {
+        e.preventDefault();
+        location.href = 'index2.html';
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>index1</h1>
+
+  <div>
+    <p><a href="index2.html" target="_blank">target_blank</a></p>
+  </div>
+
+  <div>
+    <p><a href="#" id="lf">location.href</a></p>
+  </div>
+
+  <iframe src="index2.html" frameborder="0"></iframe>
+</body>
+</html>
